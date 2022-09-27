@@ -1,13 +1,16 @@
 export interface Character {
-  id: number;
-  name: string;
-  status: string;
-  species: string;
-  gender: string;
-  type: string;
-  image: string;
+  id: string
+  name: string
+  status: string
+  species: string
+  type: string
+  gender: string
+  image: string
 }
 
 export interface CharactersResponse {
-  characters: Character[];
+  characters: {
+    info: []
+    results: Character[]
+  }
 }
